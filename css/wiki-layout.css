@@ -151,6 +151,30 @@ footer {
 footer p {
   margin-top: 8px;
 }
+
+.wiki-tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: none;
+  width: 300px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+h4 {
+  position: relative;
+  display: inline-block;
+}
+
+h4:hover .wiki-tooltip {
+  display: block;
+}
+
 .highlight {
   padding: 2px;
   background-color: #ffee9f;

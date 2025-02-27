@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자기소개 위키 페이지</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js"></script>
   </head>
   <body>
     <div id="app">
@@ -24,7 +23,7 @@
         <h2 class="title">마빈</h2>
         <hr />
         <section>
-          <h3 class="subtitle">자기소개</h3>
+          <h3 class="subtitle" id="intro">자기소개</h3>
           <p>
             안녕하세요. 마빈입니다. 저는 예전부터 게임하는 것을 좋아했어요.
             비디오 게임들을 많이 했는데, 초등학교 4학년 때 부터... 아마도 게임을
@@ -39,7 +38,14 @@
         <section>
           <h3 class="subtitle">영감을 준 것들</h3>
           <article>
-            <h4 class="media-titles">레지던트 이블4</h4>
+            <h4
+              class="media-titles"
+              data-wiki-title="Resident Evil 4"
+              id="resident-evil4"
+            >
+              레지던트 이블4<span class="wiki-tooltip">...불러오는중....</span>
+            </h4>
+
             <div class="thumbnail">
               <img src="./images/re4.png" width="400" alt="resident evil4" />
             </div>
@@ -58,13 +64,50 @@
           <br />
           <br />
           <article>
-            <h4>디스코 엘리시움</h4>
+            <h4
+              class="media-titles"
+              data-wiki-title="Disco Elysium
+            "
+              id="disco-elysium"
+            >
+              디스코 엘리시움<span class="wiki-tooltip">...불러오는중....</span>
+            </h4>
             <div class="thumbnail">
               <img
                 src="./images/disco-elysium.png"
                 width="400"
-                alt="resident evil4"
+                alt="disco-elysium"
               />
+            </div>
+            <p>
+              이것도, 좋아해요. 많이. 알코올 중독자이고 경찰인 주인공이 어떠한
+              섬에서 일어나는 살인 사건을 조사하는 게임입니다. 게임플레이도
+              혁신적이고, 자기혐오와 존재적인 질문들로 가득차 있는 스토리도
+              굉장히 상급이고, 로어(lore)도 상당히 흥미롭습니다. 그리고 그것을
+              묶는 RPG 게임플레이는 상당히 탁월합니다. 자기 성격대로 게임이
+              진행되요.
+              <span class="highlight">
+                만약 해보실거면, 자신에게 솔직해지고, 자신이 하고싶은대로
+                하세요.
+              </span>
+              대개의 사람들은 경찰이라는 권위 앞에서 겸손해지곤 합니다. 여러분이
+              일을 저질러도 스토리는 진행되고, 어떤 방식이든 흥미로울겁니다.
+              다만, 글을 많이 읽어야 해요. 많이.
+            </p>
+          </article>
+          <br />
+          <br />
+          <article>
+            <h4
+              class="media-titles"
+              data-wiki-title="To Be Kind
+            "
+              id="to-be-kind"
+            >
+              To be kind<span class="wiki-tooltip">...불러오는중....</span>
+            </h4>
+            <div class="thumbnail">
+              <img src="./images/to-be-kind.png" width="400" alt="to-be-kind" />
             </div>
             <p>
               이것도, 좋아해요. 많이. 알코올 중독자이고 경찰인 주인공이 어떠한
@@ -170,10 +213,10 @@
           <h2>Contents</h2>
           <ol class="contents">
             <li>
-              <a href="#">자기소개</a>
+              <a href="#int">자기소개</a>
             </li>
             <li>
-              <a href="#">나만의 갤러리</a>
+              <a href="#">잡다한 사진들</a>
             </li>
             <li>
               <a href="#">나를 울린 인생 작품</a>
@@ -185,5 +228,6 @@
         </nav>
       </aside>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
