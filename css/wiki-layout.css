@@ -178,7 +178,8 @@ h4:hover .wiki-tooltip {
 
 .images {
   display: grid;
-  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+  gap: 0.5rem;
   width: 80%;
   height: 80%;
   grid-template-columns: repeat(3, 1fr);
@@ -187,18 +188,29 @@ h4:hover .wiki-tooltip {
 
 .image-gallery {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.to-left {
-  text-align: left;
+.title-to-left {
+  align-self: start;
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
+
   object-fit: cover;
+}
+
+.images img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.images img:hover {
+  transform: scale(1.1) rotate(5deg);
 }
 
 :root {
