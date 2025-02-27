@@ -179,21 +179,7 @@ h4:hover .wiki-tooltip {
   padding: 2px;
   background-color: #ffee9f;
 }
-:root {
-  --page-padding: 48px;
-  --page-subtitle-margin-y: 32px;
-  --page-paragraph-margin-y: 16px;
-  --right-sidebar-padding: 32px;
 
-  --header-width: 235px;
-  --header-bg-color: #f6f6f6;
-
-  --aside-width: 350px;
-  --aside-bg-color: #f6f6f6;
-
-  --divider-color: #efefef;
-  --font-default-color: #333;
-}
 .images {
   display: grid;
   gap: 1rem;
@@ -216,4 +202,20 @@ img {
   height: 200px;
 
   object-fit: cover;
+}
+
+:root {
+  --page-padding: 48px;
+  --page-subtitle-margin-y: 32px;
+  --page-paragraph-margin-y: 16px;
+  --right-sidebar-padding: 32px;
+
+  --header-width: 235px;
+  --header-bg-color: #f6f6f6;
+
+  --aside-width: 350px;
+  --aside-bg-color: #f6f6f6;
+
+  --divider-color: #efefef;
+  --font-default-color: #333;
 }
