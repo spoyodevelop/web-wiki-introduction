@@ -138,19 +138,26 @@
             </p>
           </article>
         </section>
-
-        <section>
+        <br />
+        <br />
+        <section id="comments" class="comments-section">
           <div class="comment-writing-container">
-            <form>
+            <form id="submit-form">
               <fieldset>
                 <legend>댓글 쓰기</legend>
+                <br />
+
                 <textarea
+                  class="comment-textarea"
+                  id="comment-details"
                   placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
                 ></textarea>
               </fieldset>
+              <button type="submit" class="button">댓글 쓰기</button>
             </form>
           </div>
-          <ul class="comment-list">
+          <br />
+          <ul class="comment-list" id="comment-list">
             <li>
               <div class="comment-item">
                 <div class="comment-author">
@@ -234,7 +241,7 @@
               <a href="#favorite">영감을 준 것들</a>
             </li>
             <li>
-              <a href="#">감상평</a>
+              <a href="#comments">감상평</a>
             </li>
           </ol>
         </nav>

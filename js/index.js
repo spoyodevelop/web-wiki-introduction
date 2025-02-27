@@ -69,4 +69,34 @@ document.addEventListener("DOMContentLoaded", () => {
     tempDiv.innerHTML = html;
     return tempDiv.textContent || tempDiv.innerText || "";
   }
+  document
+    .getElementById("submit-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+
+      const comment = document.getElementById("comment-details").value;
+
+      createComment(comment);
+      alert("코멘트를 등록했어요.");
+    });
+  function createComment(comment) {
+    const html = `<li>
+              <div class="comment-item">
+                <div class="comment-author">
+                  <img
+                    src="./images/comment-author-icon.png"
+                    alt="사용자 프로필 이미지"
+                    
+                  />
+                  <span>방문자</span>
+                </div>
+                <div class="comment-content">
+                  ${comment}
+                </div>
+              </div>
+            </li>
+            `;
+    const commentList = document.getElementById("comment-list");
+    commentList.innerHTML += html;
+  }
 });

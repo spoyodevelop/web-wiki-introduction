@@ -196,21 +196,61 @@ h4:hover .wiki-tooltip {
   align-self: start;
 }
 
-img {
+.images img {
   width: 220px;
   height: 220px;
-
   object-fit: cover;
-}
-
-.images img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   border-radius: 4px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .images img:hover {
   transform: scale(1.1) rotate(5deg);
+}
+
+.comment-writing-container {
+  border: none;
+  width: 100%;
+}
+.comment-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+.comment-author {
+  margin-bottom: 0.5rem;
+}
+.comment-content {
+  margin-bottom: 0.5rem;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #003d80;
+  transform: scale(0.95);
 }
 
 :root {
