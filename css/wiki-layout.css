@@ -52,6 +52,7 @@ h2 {
   font-size: 2.4rem;
   margin-bottom: var(--page-subtitle-margin-y);
 }
+
 h3.subtitle {
   font-size: 1.6rem;
   margin: var(--page-subtitle-margin-y) 0;
@@ -60,6 +61,8 @@ h3.subtitle {
 h4 {
   font-size: 1.2rem;
   margin-bottom: var(--page-subtitle-margin-y);
+  position: relative;
+  display: inline-block;
 }
 
 section > p,
@@ -87,6 +90,7 @@ div.thumbnail img {
   width: 100%;
   height: 100%;
 }
+
 section::after {
   content: "";
   display: block;
@@ -94,9 +98,7 @@ section::after {
   border-bottom: 1px solid var(--divider-color);
 }
 
-hr {
-  border: 1px solid var(--divider-color);
-}
+hr,
 section hr {
   border: 1px solid var(--divider-color);
 }
@@ -118,7 +120,6 @@ aside h2 {
   background-position: center 100%;
   width: var(--aside-width);
   height: var(--aside-width);
-
   text-indent: -1000rem;
 }
 
@@ -166,11 +167,6 @@ footer p {
   color: #333;
 }
 
-h4 {
-  position: relative;
-  display: inline-block;
-}
-
 h4:hover .wiki-tooltip {
   display: block;
 }
@@ -185,14 +181,16 @@ h4:hover .wiki-tooltip {
   gap: 1rem;
   width: 80%;
   height: 80%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
+
 .image-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .to-left {
   text-align: left;
 }
@@ -200,7 +198,6 @@ h4:hover .wiki-tooltip {
 img {
   width: 200px;
   height: 200px;
-
   object-fit: cover;
 }
 
@@ -209,13 +206,10 @@ img {
   --page-subtitle-margin-y: 32px;
   --page-paragraph-margin-y: 16px;
   --right-sidebar-padding: 32px;
-
   --header-width: 235px;
   --header-bg-color: #f6f6f6;
-
   --aside-width: 350px;
   --aside-bg-color: #f6f6f6;
-
   --divider-color: #efefef;
   --font-default-color: #333;
 }
